@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+/* header navi */
+header,
+footer {
+    background-color: #6a7b8b;
+    color: white;
+}
+
+header {
+    display: flex;
+}
+
+header img {
+    object-fit: contain;
+    max-width: 80px;
+    margin: 5px 20px;
+}
+
+nav {
+    margin: 10px 20px;
+    width: 100%;
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 7px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* hero img */
+.hero img {
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------- */
+
+/* MAIN PAGE */
+
+
+.cover {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.cover img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cover p {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    /* font-size: 0.9em; */
+    color: #5c5b5b;
+    text-shadow: 0px 2px 4px rgba(248, 248, 248, 0.5);
+}
+
+.box-wrapper {
+    max-width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    color: white;
+}
+
+.cup,
+.hand,
+.book {
+    width: 30%;
+    background-color: rgba(106, 123, 139, 0.42);
+    padding: 15px 15px;
+    font-size: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .box-wrapper {
+        display: block;
+    }
+
+    .cup,
+    .hand,
+    .book {
+        width: 100%;
+        margin: 15px auto;
+    }
+}
+
+.nametag {
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.cup img,
+.hand img,
+.book img {
+    display: block;
+    width: 60px;
+    margin: 10px auto;
+}
+
+
+
+
+.button {
+    /* text-align: center; */
+    background-color: #6a7b8b;
+    max-width: 150px;
+    margin: 40px auto;
+    border-radius: 3px;
+    padding: 15px 5px;
+    text-align: center;
+
+
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* sekcja III programme */
+.programme {
+    color: #5c5b5b
+}
+
+h2 {
+    text-align: center;
+}
+
+.votre {
+    display: flex;
+    margin: 30px 0 20px 50px;
+}
+
+.votre img {
+    max-width: 45px;
+    margin-right: 20px;
+}
+
+.votre p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.wrap-columns {
+    display: flex;
+    max-width: 70%;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+
+.column {
+    max-width: 45%;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .wrap-columns {
+        display: block;
+    }
+
+    .column {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.column p {
+    margin: 20px auto;
+}
+
+.randez {
+    color: #5c5b5b;
+    max-width: 70%;
+    margin: 0 auto;
+
+}
+
+.randez p {
+    text-align: center;
+}
+
+.randez p,
+.randez h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* ---ABOUT---------------------------------------- */
+.about-first,
+.about-second {
+    display: flex;
+    width: 85%;
+    margin: 30px auto;
+    color: #5c5b5b;
+    justify-content: space-between;
+}
+
+.about-first img,
+.about-second img {
+    width: 100%;
+}
+
+.pic {
+    width: 33%;
+}
+
+.text {
+    width: 59%;
+}
+
+.text h3,
+.text p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .about-first,
+    .about-second {
+        display: block;
+    }
+
+    .pic {
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+/* ------------------CONTACT */
+.form,
+.map {
+    width: 70%;
+    margin: 0 auto;
+    color: #5c5b5b
+}
+
+.form h3,
+.map h3 {
+    text-align: center;
+}
+
+/* -------formularz */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #6a7b8b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #6a7b8b;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.thanks {
+    display: none;
+    width: 85%;
+    text-align: center;
+    color: #5c5b5b;
+    position: relative;
+    padding: 15px 15px;
+
+}
+
+.thanks img {
+    max-width: 25px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.thanks p {
+    margin: 15px auto;
+}
+
+.thanks button {
+    background-color: #6a7b8b;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+
+}
+
+.thanks button a {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+/* formularz */
+
+.map {
+    margin: 40px auto;
+}
+
+address {
+    font-style: normal;
+    color: #5c5b5b;
+    margin-bottom: 25px;
+}
+
+.where {
+    width: 100%;
+    min-height: 400px;
+}
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+}
+
+footer img {
+    display: inline-block;
+    object-fit: contain;
+    max-width: 20px;
+    margin: 5px 20px;
+}
+
+.foot {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logos {
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+
+.logos img {
+    max-height: 15px;
+}
+
+footer {
+    font-size: 0.6em;
+}
+
+.empty {
+    min-width: 10%;
+}
